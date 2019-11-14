@@ -20,6 +20,8 @@
     <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
 
+    <meta name="viewport" content="width=device-width">
+
     <style>
 /* text styling for responsive design - headings */
     p.heading {
@@ -30,15 +32,35 @@
       font-weight: bold;
       text-align: left;
     }
-    @media screen and (min-width: 1401px) {
+    @media (max-width: 360px) {
       p.heading {
         font-size: 40px;
       }
     }
-    @media screen and (max-width: 1400px) {
+    @media (min-width: 360px) {
       p.heading {
         font-size: 40px;
       }
+    }
+    @media (min-width: 768px) {
+      p.heading {
+        font-size: 40px;
+      }
+    }
+    @media (min-width: 992px) {
+      p.heading {
+        font-size: 50px;
+      }
+    }
+    @media (min-width: 1200px) {
+      p.heading {
+        font-size: 50px;
+      }
+    }
+      @media (min-width: 1368px) {
+        p.heading {
+          font-size: 80px;
+        }
     }
 
 /* text styling for responsive design - details (left side of pics) */
@@ -47,19 +69,39 @@
       color: white;
       font-weight: bold;
       text-align: left;
+      padding-left: 5vw;
     }
-    @media screen and (min-width: 1401px) {
-      p.detail-left {
-        font-size: 4vh;
-        padding-left: 5vw;
+      @media (max-width: 360px) {
+        p.detail-left {
+          font-size: 27px;
+
+        }
       }
-    }
-    @media screen and (max-width: 1400px) {
-      p.detail-left {
-        font-size: 7vw;
-        padding-left: 5vw;
+      @media (min-width: 360px) {
+        p.detail-left {
+          font-size: 27px;
+        }
       }
-    }
+      @media (min-width: 768px) {
+        p.detail-left {
+          font-size: 27px;
+        }
+      }
+      @media (min-width: 992px) {
+        p.detail-left {
+          font-size: 30px;
+        }
+      }
+      @media (min-width: 1200px) {
+        p.detail-left {
+          font-size: 30px;
+        }
+      }
+        @media (min-width: 1368px) {
+          p.detail-left {
+            font-size: 40px;
+          }
+        }
 
     /* text styling for responsive design - details (right side of pics) */
         p.detail-right {
@@ -68,37 +110,100 @@
           font-weight: bold;
           text-align: left;
         }
-        @media screen and (min-width: 735px) {
+        @media (max-width: 360px) {
           p.detail-right {
-            font-size: 24px;
-            padding-left: 0px;
-          }
-        }
-        @media screen and (max-width: 1068px) {
-          p.detail-right {
-            font-size: 32px;
+            font-size: 27px;
             padding-left: 5vw;
           }
+        }
+        @media (min-width: 360px) {
+          p.detail-right {
+            font-size: 27px;
+            padding-left: 5vw;
+          }
+        }
+        @media (min-width: 768px) {
+          p.detail-right {
+            font-size: 27px;
+            padding-left: 5vw;
+          }
+        }
+        @media (min-width: 992px) {
+          p.detail-right {
+            font-size: 30px;
+            padding-left: 2vw;
+          }
+        }
+        @media (min-width: 1200px) {
+          p.detail-right {
+            font-size: 30px;
+            padding-left: 2vw;
+          }
+        }
+          @media (min-width: 1368px) {
+            p.detail-right {
+              font-size: 40px;
+              padding-left: 2vw;
+            }
         }
 
     /* text styling for responsive design - icon */
         img.detail-icon {
           background-color: #43c6ac;
+          max-width: auto;
+          padding-left: 5px;
         }
-        @media screen and (min-width: 1401px) {
-          img.detail-icon {
-            max-height: 5vw;
-            max-width: auto;
-            padding-left: 5px;
+
+          @media (max-width: 360px) {
+            img.detail-icon {
+              max-height: 15vw;
+            }
           }
-        }
-        @media screen and (max-width: 1400px) {
-          img.detail-icon {
-            max-height: 15vw;
-            max-width: auto;
-            padding-left: 0vw;
+          @media (min-width: 360px) {
+            img.detail-icon {
+              max-height: 15vw;
+            }
           }
-        }
+          @media (min-width: 768px) {
+            img.detail-icon {
+              max-height: 5vw;
+            }
+          }
+          @media (min-width: 992px) {
+            img.detail-icon {
+              max-height: 5vw;
+            }
+          }
+          @media (min-width: 1200px) {
+            img.detail-icon {
+              max-height: 5vw;
+            }
+          }
+              img.detail-icon {
+                max-height: 5vw;
+              }
+            }
+
+/* styling for images on left */
+            @media (min-width: 360px) {
+              img.image-left {
+                width: auto;
+                max-height: 80vh;
+                padding-left:0vw;
+                padding-top:2vh;
+              }
+            }
+
+            @media (min-width: 1200px) {
+              img.image-left {
+                width: auto;
+                max-height: 80vh;
+                padding-left:3.5vw;
+                padding-top:1vh;
+              }
+            }
+
+
     </style>
 
   </head>
@@ -206,7 +311,7 @@
                 <p class="detail-right" style="color:#0B4439">intuitive</p>
               </div>
               <div class="col-sm-12 col-xl-6 order-xl-1">
-                <img src="assets/img/shyft-3.png" alt="Image" style="width: auto; max-height: 80vh; margin: 5vmin 0px">
+                <img class="image-left" src="assets/img/shyft-3.png">
               </div>
             </div>
 
@@ -230,7 +335,7 @@
             <div class="row align-items-center">
               <div class="col-sm-12 col-xl-7 order-xl-12">
                 <br>
-                <p class="detail-right">not the focus of all ridesharing apps.</p>
+                <p class="detail-right">not the focus of most <br>ridesharing apps.</p>
                 <p class="detail-right" style="color:#0B4439">it should be.</p>
                 <br>
                 <p class="detail-right">logical groupings</p>
@@ -238,7 +343,7 @@
                 <p class="detail-right">driver training</p>
               </div>
               <div class="col-sm-12 col-xl-5 order-xl-1">
-                <img src="assets/img/shyft-5.png" alt="Image" style="width: auto; max-height: 80vh; margin: 5vmin 0px">
+                <img class="image-left" src="assets/img/shyft-5.png">
               </div>
             </div>
 
@@ -257,7 +362,7 @@
                 <img src="assets/img/shyft-6-2.png" alt="Image" style="width: auto; max-height: 80vh; margin: 5vmin 0px">
               </div>
             </div>
-hello
+
             <p class="heading">scheduling a ride</p>
             <div class="row align-items-center">
               <div class="col-sm-12 col-xl-7 order-xl-12">
@@ -266,7 +371,7 @@ hello
                 <p class="detail-right">simpler to schedule than competitors</p>
               </div>
               <div class="col-sm-12 col-xl-5 order-xl-1">
-                <img src="assets/img/shyft-7-1.png" alt="Image" style="width: auto; max-height: 80vh; margin: 5vmin 0px">
+                <img class="image-left" src="assets/img/shyft-7-1.png">
               </div>
             </div>
             <div class="row align-items-center">
@@ -286,7 +391,7 @@ hello
               <div class="col-sm-12 col-xl-4">
                 <br>
                 <p class="detail-left" style="color:#0B4439">AI powered</p>
-                <br><br>
+                <br>
                 <p class="detail-left">never get in the wrong car</p>
               </div>
               <div class="col-sm-12 col-xl-8">
@@ -294,7 +399,7 @@ hello
               </div>
             </div>
 
-            <img src="assets/img/shyft-9.png" alt="Image" style="padding: 40vh 0px">
+            <img src="assets/img/shyft-9.png" alt="Image" style="margin: 30vh 0vh; width:auto; max-height:40vh;">
 
           </div>
         </div>
