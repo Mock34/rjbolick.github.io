@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151774559-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-151774559-1');
+    </script>
+
+
+    <meta charset="utf-8">
+    <title>Mindful Running</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An N=1 study on the Focus Pack for Strava.">
+    <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width">
+
+    <meta http-equiv=“Pragma” content=”no-cache”>
+    <meta http-equiv=“Expires” content=”-1″>
+    <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+
+    <style media="screen">
+    /* text styling for responsive design - headings */
+        p.main {
+          color: muted;
+          font-weight: light;
+          text-align: left;
+        }
+        @media (max-width: 360px) {
+          p.main {
+            font-size: 14px;
+          }
+        }
+        @media (min-width: 360px) {
+          p.main {
+            font-size: 15px;
+          }
+        }
+        @media (min-width: 768px) {
+          p.main {
+            font-size: 16px;
+          }
+        }
+        @media (min-width: 992px) {
+          p.main {
+            font-size: 18px;
+          }
+        }
+        @media (min-width: 1200px) {
+          p.main {
+            font-size: 18px;
+          }
+        }
+          @media (min-width: 1368px) {
+            p.main {
+              font-size: 18px;
+            }
+        }
+
+    </style>
+
+    <style type="text/css">
+    .centerImage{
+        display:block;
+        width: auto;
+        text-align:center;
+        max-height: 70vh;
+        margin: auto;
+        }
+    </style>
+
+
+
+  </head>
+
+  <body>
+    <div class="loader">
+      <div class="loading-animation"></div>
+    </div>
+
+
+    <div class="article-progress" data-sticky="below-nav">
+      <progress class="reading-position" value="0"></progress>
+      <div class="article-progress-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col py-2">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                  <div class="text-small text-muted mr-1">Reading:</div>
+                  <div class="text-small">Did it work? A skeptic's journey testing the Focus Pack.</div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <span class="text-small text-muted">Share:</span>
+                  <div class="d-flex ml-1">
+                    <a href="https://twitter.com/intent/tweet?text=https://www.ryanbolick.com/mindfulrunning.html%20@uiuxguy%20" target="_blank" class="nav-link mx-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" class="injected-svg icon undefined" data-src="assets/img/icons/social/twitter.svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path></svg>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ryanbolick.com%2Fmindfulrunning.html&amp;src=sdkpreparse" target="_blank" class="nav-link mx-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" class="injected-svg icon undefined" data-src="assets/img/icons/social/facebook.svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Facebook icon</title><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="bg-dark text-light overlay" data-overlay>
+      <img src="assets/img/n1graph.png" alt="Image" class="bg-image opacity-50">
+      <div class="container pt-6">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="blog.html">Blog</a>
+                  </li>
+                </ol>
+              </nav>
+
+            </div>
+            <h1>Did it work?</h1>
+            <h2>A skeptic's journey testing the Focus Pack</h2>
+            <div class="d-flex align-items-center">
+              <a href="#">
+                <img src="assets/img/ryan1.jpg" alt="Avatar" class="avatar mr-2">
+              </a>
+              <div>
+                <div>by <a href="#">Ryan Bolick</a>
+                </div>
+                <div class="text-small text-muted">18 December 2019</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-0" data-reading-position>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xs-11 col-md-8 mt-6">
+            <article class="article">
+
+              <h4>The premise</h4>
+              <p class="main">
+                Mindfulness is not something that came naturally to me. In fact, I was very skeptical until I started working on a project at North Carolina State University. I was managing a team with business and engineering students in a course on design engineering. Our initial objective was to help runners breathe better during running. However, we discovered that the problem was much more challenging than we originally thought. Our research uncovered that runners are not connecting to their mind, body, and surroundings, leading to dissatisfaction while training and even increased injury risk. Although we were skeptical, we set out to develop a mindful running solution.
+              </p>
+
+              <h4>The mindful running solution</h4>
+              <p class="main">
+                Over the course of four months, the team and I built the Focus Pack platform. We integrated the Focus Pack into Strava, the leader in social fitness with over 48 million users. Strava is an expert at the data, but they do not currently have a mindful solution, which is why we thought they were a perfect fit for our mindful running solution.
+              </p>
+              <p class="main" style="font-style:italic">
+                You can read more about the Focus Pack that we developed <span> <a href="https://www.ryanbolick.com/focuspack.html" target="_blank">here</a></span>.
+              </p>
+
+              <h4>Case study: Pre-mindful running</h4>
+              <p class="main">
+                Back in September 2019 when I started this project, I had been in a slump. Over the last 11 months my weekly mileage had plummeted from 42 miles a month to just 27.
+              </p>
+              <p class="main">
+                Before that slump, I competed in over 15 races during the 2018 Spartan Race series. It was a grueling schedule, but I wanted to be in the top 10 of my age group and qualify for the world championship. My training was just enough to allow me to eek out a top 10 finish- beating the next racer by just 3 minutes in a 3 hour race. I had done it! I qualified for the world championship!
+              </p>
+              <figure>
+                <img src="assets/img/n1spartan1.jpeg" alt="Image" class="rounded" style="max-height:30vh">
+                <img src="assets/img/n1spartan2.jpeg" alt="Image" class="rounded" style="max-height:30vh">
+                <img src="assets/img/n1spartan3.jpeg" alt="Image" class="rounded" style="max-height:30vh">
+                <figcaption>Running up mountains to carry heavy things and swing through the air</figcaption>
+              </figure>
+              <p class="main">
+                I was always proud to be race-motivated and centered my running around them. So when the season ended, my training did too, initiating an 11 month fitness slump. I couldn’t find the motivation to run because the races were many months away. However, when the races were coming up, I just found new excuses not to run.
+              </p>
+              <p class="main">
+                My lack of training was not only a result of procrastination and excuses. I had tried training plans, new shoes, and even living with my amazing ultra running wife, Brinnae, didn’t help. It was time for something different.
+              </p>
+
+              <h4>Case study: Running with the Focus Pack</h4>
+              <p class="main">
+                Here’s where mindfulness entered the picture. I’ll be honest, I entered as a huge skeptic, having tried many other methods. I had low expectations for the process.
+              </p>
+              <p class="main">
+                As I built the Focus Pack I tried the prototypes and took in the principles of mindfulness that are manifested in the Mindful Goals feature. I thought my fitness would stabilize or with some luck improve slightly, but I was not prepared for what actually happened.
+              </p>
+              <figure>
+                <img src="assets/img/GIF-mindfulGoals.gif" alt="Image" class="rounded" style="max-height:50vh">
+                <figcaption>Mindful Goals: A new feature in the Focus Pack</figcaption>
+              </figure>
+              <p class="main">
+                I went from running <span style="font-weight:bold">27 miles a month to 78</span> almost overnight. Mindful running allowed me to do this without injury. <span style="font-weight:bold">I listened to my body and stopped worrying if I was running fast enough or far enough.</span> Over a 3 month period, I ran 235 miles. That is only 59 miles less than my entire 7 month season and 67 miles less than my 11 month slump.
+              </p>
+              <p class="main" style="font-style:italic">
+                **The mileages above are estimates (+/- 2%). I am currently learning Python, which will enable me to connect to Strava’s API and run statistical analyses.
+              </p>
+              <figure>
+                <img src="assets/img/n1graph.png" alt="Image" class="rounded" style="max-height:60vh">
+                <figcaption>My Fitness plot from Strava: March 08, 2018 - December 09, 2019</figcaption>
+              </figure>
+
+              <h4>But wait, there's more</h4>
+              <p class="main">
+                Over the course of four months, the team and I built the Focus Pack platform. We integrated the Focus Pack into Strava, the leader in social fitness with over 48 million users. Strava is an expert at the data, but they do not currently have a mindful solution, which is why we thought they were a perfect fit for our mindful running solution.
+              </p>
+              <p class="main">
+                I’ve gone from a race-motivated “runner” who did only the bare minimum to increasing my Strava-calculated fitness score by 180% in just three months. I can now call myself a runner. I don’t just do it for the races anymore, running allows me to connect to nature, improve my fitness, and feel more energy.
+              </p>
+
+              <h4>Conclusions</h4>
+              <p class="main">
+                Originally a skeptic, working on this project and integrating it into my own running during this case study has allowed me to become a more mindful, and thus, better. runner. Originally someone who could barely run a 3 mile training run, I am now feeling so good I may train for a marathon! I encourage everyone to try out mindful running.
+              </p>
+              <p class="main">
+                I would like to give a shout out to my team of MBA and MS Engineering colleagues at North Carolina State University. I would like to thank Strava for giving us the ideal platform to develop the Focus Pack on. For more details on the Focus Pack, check out our blog <span> <a href="https://www.ryanbolick.com/focuspack.html" target="_blank">here</a></span>. Join the awesome Strava community <span> <a href="https://www.strava.com/" target="_blank">here</a></span>.
+              </p>
+
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="has-divider">
+      <div class="container pt-3">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-10">
+            <hr>
+            <div class="d-flex align-items-center">
+              <span class="text-small mr-1">Share this article:</span>
+              <div class="d-flex mx-2">
+                <a href="https://twitter.com/intent/tweet?text=https://www.ryanbolick.com/mindfulrunning.html%20@uiuxguy%20" target="_blank" class="nav-link mx-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" class="injected-svg icon undefined" data-src="assets/img/icons/social/twitter.svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path></svg>
+                </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ryanbolick.com%2Fmindfulrunning.html&amp;src=sdkpreparse" target="_blank" class="nav-link mx-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" class="injected-svg icon undefined" data-src="assets/img/icons/social/facebook.svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Facebook icon</title><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"></path></svg>
+                </a>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="pb-5 bg-primary-3 text-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xs-11 col-lg-7">
+            <div class="h1">Interested in collaborating?</div>
+              <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#subscribe-modal">
+                Let's create together
+              </button>
+              <div class="modal fade" id="subscribe-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img class="icon bg-dark" src="assets/img/icons/interface/cross.svg" alt="cross interface icon" data-inject-svg />
+                      </button>
+                      <div class="m-xl-4 m-3">
+                        <div class="text-center mb-4">
+                          <h4 class="h1 mb-1" style="color:#091733">Get in touch.</h4>
+                          <p style="color:#091733">Just use any method below. Thanks!</p>
+                      </div>
+                          <p style="color:black">Phone: <a href="tel:+1-919-930-4727" style="color:black">919.930.4727</a></p>
+                          <p style="color:black">Email: <a href="mailto:ryanjbolick@gmail.com" target="blank" style="color:black">ryanjbolick@gmail.com</a></p>
+                          <p style="color:#091733">Twitter: <a href="https://twitter.com/uiuxguy" target="blank" style="color:black">@uiuxguy</a></p>
+                          <p style="color:#091733">LinkedIn: <a href="https://www.linkedin.com/in/rjbolick/" target="blank" style="color:black">rjbolick</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+        </div>
+
+            <div class="row justify-content-center mt-5">
+              <div class="col-5 col-lg-3 col-xl-2">
+                <h5>Navigate</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="comingsoon.html" class="nav-link">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="comingsoon.html" class="nav-link">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 col-lg-4 col-xl-4">
+                <h5>Contact</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-link">
+                    Phone: <a href="tel:+1-919-930-4727">919.930.4727</a>
+                  </li>
+                  <li class="nav-link">
+                    Email: <a href="mailto:ryanjbolick@gmail.com" target="blank">ryanjbolick@gmail.com</a>
+                  </li>
+                  <li class="nav-link">
+                    Twitter: <a href="https://twitter.com/uiuxguy"target="blank">@uiuxguy</a>
+                  </li>
+                  <li class="nav-link">
+                    LinkedIn: <a href="https://www.linkedin.com/in/rjbolick/" target="blank">rjbolick</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+
+        <div class="row text-center">
+          <div class="col-12 mt-5">
+            <p class="text-muted" style="font-weight:lighter">Designed and coded by Ryan Bolick. ©2019</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <a href="#" class="btn back-to-top btn-primary btn-round" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+      <img class="icon" src="assets/img/icons/theme/navigation/arrow-up.svg" alt="arrow-up icon" data-inject-svg />
+    </a>
+    <!-- Required vendor scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+    <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <!-- Clipboard (copies content from browser into OS clipboard) -->
+    <script type="text/javascript" src="assets/js/clipboard.js"></script>
+    <!-- Fancybox (handles image and video lightbox and galleries) -->
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <!-- Flatpickr (calendar/date/time picker UI) -->
+    <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
+    <!-- Flickity (handles touch enabled carousels and sliders) -->
+    <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+    <!-- Isotope (masonry layouts and filtering) -->
+    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- jarallax (parallax effect and video backgrounds) -->
+    <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
+    <!-- jQuery Countdown (displays countdown text to a specified date) -->
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <!-- jQuery smartWizard facilitates steppable wizard content -->
+    <script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
+    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+    <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
+    <!-- Prism (displays formatted code boxes) -->
+    <script type="text/javascript" src="assets/js/prism.js"></script>
+    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+    <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
+    <!-- Smooth scroll (animation to links in-page)-->
+    <script type="text/javascript" src="assets/js/smooth-scroll.polyfills.min.js"></script>
+    <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+    <script type="text/javascript" src="assets/js/svg-injector.umd.production.js"></script>
+    <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+    <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+    <!-- Typed text (animated typing effect)-->
+    <script type="text/javascript" src="assets/js/typed.min.js"></script>
+    <!-- Required theme scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/theme.js"></script>
+    <!-- Removes page load animation when window is finished loading -->
+    <script type="text/javascript">
+      window.addEventListener("load", function () {    document.querySelector('body').classList.add('loaded');  });
+    </script>
+
+  </body>
+
+</html>
