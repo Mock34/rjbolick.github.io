@@ -15,7 +15,7 @@
     <meta charset="utf-8">
     <title>Shyft</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A new way to rideshare">
+    <meta name="description" content="Accessible ridesharing">
     <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
     <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
@@ -23,207 +23,121 @@
 
     <meta name="viewport" content="width=device-width">
 
-    <style>
-/* text styling for responsive design - headings */
-    p.heading {
-      background-color: #43c6ac;
-      padding-left: 5vw;
-      padding-top: 30vh;
-      color: white;
-      font-weight: bold;
-      text-align: left;
-    }
-    @media (max-width: 360px) {
-      p.heading {
-        font-size: 40px;
-      }
-    }
-    @media (min-width: 360px) {
-      p.heading {
-        font-size: 40px;
-      }
-    }
-    @media (min-width: 768px) {
-      p.heading {
-        font-size: 40px;
-      }
-    }
-    @media (min-width: 992px) {
-      p.heading {
-        font-size: 50px;
-      }
-    }
-    @media (min-width: 1200px) {
-      p.heading {
-        font-size: 50px;
-      }
-    }
-      @media (min-width: 1368px) {
-        p.heading {
-          font-size: 80px;
-        }
-    }
 
-/* text styling for responsive design - details (left side of pics) */
-    p.detail-left {
-      background-color: #43c6ac;;
-      color: white;
-      font-weight: bold;
-      text-align: left;
-      padding-left: 5vw;
-    }
-      @media (max-width: 360px) {
-        p.detail-left {
-          font-size: 27px;
+    <!--FACEBOOK-->
+    <meta property="og:image" content="https://www.ryanbolick.com/assets/img/shyft-1.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.ryanbolick.com/focuspack" />
+    <meta property="og:title" content="Shyft" />
+    <meta property="og:description" content="Accessible ridesharing" />
+    <meta property="fb:app_id" content="548779195967938" />
 
-        }
-      }
-      @media (min-width: 360px) {
-        p.detail-left {
-          font-size: 27px;
-        }
-      }
-      @media (min-width: 768px) {
-        p.detail-left {
-          font-size: 27px;
-        }
-      }
-      @media (min-width: 992px) {
-        p.detail-left {
-          font-size: 30px;
-        }
-      }
-      @media (min-width: 1200px) {
-        p.detail-left {
-          font-size: 30px;
-        }
-      }
-        @media (min-width: 1368px) {
-          p.detail-left {
-            font-size: 44px;
-          }
-        }
-
-    /* text styling for responsive design - details (right side of pics) */
-        p.detail-right {
-          background-color: #43c6ac;;
-          color: white;
-          font-weight: bold;
+    <style media="screen">
+    /* text styling for responsive design - headings */
+        p.main {
+          color: muted;
+          font-weight: light;
           text-align: left;
         }
         @media (max-width: 360px) {
-          p.detail-right {
-            font-size: 27px;
-            padding-left: 5vw;
+          p.main {
+            font-size: 15px;
           }
         }
         @media (min-width: 360px) {
-          p.detail-right {
-            font-size: 27px;
-            padding-left: 5vw;
+          p.main {
+            font-size: 18px;
           }
         }
         @media (min-width: 768px) {
-          p.detail-right {
-            font-size: 27px;
-            padding-left: 5vw;
+          p.main {
+            font-size: 18px;
           }
         }
         @media (min-width: 992px) {
-          p.detail-right {
-            font-size: 30px;
-            padding-left: 5vw;
+          p.main {
+            font-size: 20px;
           }
         }
         @media (min-width: 1200px) {
-          p.detail-right {
-            font-size: 30px;
-            padding-left: 2vw;
+          p.main {
+            font-size: 20px;
           }
         }
           @media (min-width: 1368px) {
-            p.detail-right {
-              font-size: 45px;
-              padding-left: 2vw;
+            p.main {
+              font-size: 22px;
             }
         }
-
-    /* text styling for responsive design - icon */
-        img.detail-icon {
-          background-color: #43c6ac;
-          max-width: auto;
-          padding-left: 5px;
-        }
-
-          @media (max-width: 360px) {
-            img.detail-icon {
-              max-height: 15vw;
-            }
-          }
-          @media (min-width: 360px) {
-            img.detail-icon {
-              max-height: 15vw;
-            }
-          }
-          @media (min-width: 768px) {
-            img.detail-icon {
-              max-height: 5vw;
-            }
-          }
-          @media (min-width: 992px) {
-            img.detail-icon {
-              max-height: 5vw;
-            }
-          }
-          @media (min-width: 1200px) {
-            img.detail-icon {
-              max-height: 5vw;
-            }
-          }
-            @media (min-width: 1368px) {
-              img.detail-icon {
-                max-height: 5vw;
-              }
-            }
-
-/* styling for images on left */
-            @media (min-width: 360px) {
-              img.image-left {
-                width: auto;
-                max-height: 80vh;
-                padding-left:0vw;
-                padding-top:2vh;
-              }
-            }
-
-            @media (min-width: 1200px) {
-              img.image-left {
-                width: auto;
-                max-height: 80vh;
-                padding-left:3.5vw;
-                padding-top:1vh;
-              }
-            }
-
-/* styling for first image */
-            @media (min-width: 200px) {
-              img.first {
-                width: auto;
-                max-height: 80vh;
-                margin-top: 15vh; margin-bottom: 5vh;
-              }
-            }
-            @media (min-width: 1200px) {
-              img.first {
-                max-height: 5vw;
-                width: auto;
-                max-height: 80vh;
-                margin-top: 5vh; margin-bottom: 5vh;
-              }
-            }
-
 
     </style>
+
+    <style>
+    .centerImage{
+        display:block;
+        width: auto;
+        text-align:center;
+        max-height: 80vh;
+        margin: auto;
+        }
+    </style>
+
+    <style type="text/css">
+    .lastImage{
+        display:block;
+        width: auto;
+        text-align:center;
+        max-height: 40vh;
+        margin: auto;
+        }
+    </style>
+
+    <style>
+    .centerVideo{
+        display:block;
+        width: auto;
+        text-align:center;
+        max-height: 80vh;
+        margin: auto;
+        }
+    </style>
+
+<style media="screen">
+progress.reading-position {
+  transition: opacity 0.2s ease;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  color: #43C6AC; }
+  progress.reading-position.reading-position-hidden {
+    opacity: 0; }
+
+progress.reading-position::-webkit-progress-bar {
+  background-color: transparent; }
+
+progress.reading-position::-webkit-progress-value {
+  background-color: #43C6AC; }
+
+progress.reading-position::-moz-progress-bar {
+  background-color: #43C6AC; }
+</style>
+
+<style type="text/css">
+.hi{
+color:  #0066b3;
+opacity: 1;
+font-weight:bolder;
+font-size: 3rem;
+}
+</style>
 
   </head>
 
@@ -232,78 +146,25 @@
       <div class="loading-animation"></div>
     </div>
 
-    <!-- navbar -->
-    <div class="navbar-container ">
-          <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container">
-              <div class="col flex-fill px-0 d-flex justify-content-between">
-                  <a href="index.html" aria-expanded="false" aria-haspopup="true" style="color:grey">Ryan Bolick</a>
-              </div>
-              <div class="collapse navbar-collapse justify-content-end col px-0 px-lg-2 flex-fill">
-                <div class="py-2 py-lg-0">
-                  <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                      <a href="index.html" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a href="comingsoon.html" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Projects</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a href="comingsoon.html" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a href="blog.html" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Blog</a>
-                    </li>
-                  </ul>
+
+    <div class="article-progress" style="opacity:0.95">
+      <progress class="reading-position" value="0"></progress>
+      <div class="article-progress-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col py-2">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center flex-grow-1">
+                  <img src="assets/img/shyft-logo.png" alt="Logo" class="icon icon-md mr-2">
+                  <span>Shyft</span>
                 </div>
-              </div>
-          </div>
-        </nav>
-      </div>
-
-
-
-    <section class="pt-0 pb-0">
-      <div class="alt-grid">
-        <div class="row no-gutters">
-          <div class="col-sm-12 col-xl-4 order-xl-2 mt-2 mb-3">
-            <div class="row justify-content-center sticky-top">
-              <div class="col-11">
-                <div class="mb-4">
-                  <h1>Shyft</h1>
-                    <dl class="row">
-                      <dt class="col-3 mb-1">Role</dt>
-                      <dd class="col-9 mb-1">UX Designer, User Researcher</dd>
-                      <dt class="col-3 mb-1">Client</dt>
-                      <dd class="col-9 mb-1">Elder Innovators of the Triangle</dd>
-                      <dt class="col-3 mb-1">Year</dt>
-                      <dd class="col-9 mb-1">2019</dd>
-                      <dt class="col-3 mb-1">Type</dt>
-                      <dd class="col-9 mb-1">Ground-up design</dd>
-                      </dd>
-                    </dl>
-                  <h5>Background</h5>
-                    <p>
-                      Ridesharing services have made getting around quick and easy, but this convenience isn’t without risks. Inadequate safety measures have led to dangerous and deadly situations, and accessibility concerns have been largely ignored. These problems compound with inadequate UX, leaving many users confused or with a bad experience. It’s time to rethink ridesharing.
-                    </p>
-                  <h5>Solution</h5>
-                    <p>
-                      Shyft was designed with accessibility and safety at the forefront. Gone are the fancy and ineffective visuals of other apps; with Shyft, anybody can find the features they need. Everything from onboarding to arrival was designed from the ground up and tested with users. A focused UI with rich features delivers a delightful and functional user experience.
-                    </p>
-                  <h5>Outcomes</h5>
-                    <p>
-                      This project was delivered to faculty and students at North Carolina State University and members of the Experienced Innovators of the Triangle. It received positive feedback and all were able to use the app and navigate its features.
-                    </p>
-                </div>
-
-                <hr>
                 <div class="d-flex align-items-center">
-                  <span class="text-small mr-1">Share:</span>
-                  <div class="d-flex mx-2">
-                    <a href="https://twitter.com/intent/tweet?text=https://www.ryanbolick.com/shyft.html%20@uiuxguy%20" target="_blank" class="nav-link">
-                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" class="injected-svg icon undefined" data-src="assets/img/icons/social/twitter.svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path></svg>
+                  <span class="text-small text-muted">Share:</span>
+                  <div class="d-flex ml-1">
+                    <a href="https://twitter.com/intent/tweet?text=https://www.ryanbolick.com/shyft%20@uiuxguy%20" target="_blank" class="nav-link">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" class="injected-svg icon undefined" data-src="assets/img/icons/social/twitter.svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" style="fill:#1DA1F2"></path></svg>
                     </a>
-                      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ryanbolick.com%2Fshyft.html&amp;src=sdkpreparse" target="_blank" class="nav-link">
+                      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ryanbolick.com%2FfocusPack&amp;src=sdkpreparse" target="_blank" class="nav-link">
                         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" class="injected-svg icon undefined" data-src="assets/img/icons/social/facebook.svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Facebook icon</title><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"></path></svg>
                       </a>
                   </div>
@@ -311,199 +172,314 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-<!-- hero shots -->
+    <section class="bg-dark text-light overlay min-vh-100 d-flex flex-column jarallax" data-jarallax data-speed="0.5">
+      <img src="assets/img/shyft-header.png" alt="Image" class="jarallax-img opacity-40">
+      <div class="container" style="position: relative; top:5px">
+        <div class="row">
+          <div class="d-flex ml-3 mb-5">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="/">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="shyft">Shyft</a>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center" style="position: relative; top:25vh;">
+          <div class="col-auto pl-4 pr-4">
 
-        <div class="col-sm-12 col-xl-8 order-xl-1" style="background-color:#43c6ac" align="middle">
-
-          <img class="first" src="assets/img/shyft-1.gif">
-
-            <p class="heading">onboarding</p>
-            <img src="assets/img/shyft-2.png" alt="Image" style="margin: 5vmin 0px">
-
-            <p class="heading">homescreen</p>
-            <div class="row align-items-center">
-              <div class="col-sm-12 col-xl-7 order-xl-12">
-                <p class="detail-right">user-inspired design</p>
-                <p class="detail-right" style="color:#0B4439">clean</p>
-                <p class="detail-right" style="color:#0B4439">legible</p>
-                <p class="detail-right" style="color:#0B4439">intuitive</p>
-              </div>
-              <div class="col-sm-12 col-xl-5 order-xl-1">
-                <img class="image-left" src="assets/img/shyft-3.png">
+            <h1 style="font-weight:lighter">Designing an accessible ridesharing app</h1>
               </div>
             </div>
-
-            <p class="heading">getting there</p>
-            <div class="row align-items-center">
-              <div class="col-sm-12 col-xl-4">
-                <br>
-                <p class="detail-left"><span><img class="detail-icon" src="assets/img/text.png"></span>text</p>
-                <br><br>
-                <p class="detail-left"><span><img class="detail-icon" src="assets/img/voice.png"></span>voice</p>
-              </div>
-              <div class="col-sm-12 col-xl-4">
-                <img src="assets/img/shyft-4-1.png" alt="Image" style="width: auto; max-height: 80vh; margin: 5vmin 0px">
-              </div>
-              <div class="col-sm-12 col-xl-4">
-                <img src="assets/img/shyft-4-2.png" alt="Image" style="width: auto; max-height: 80vh; margin: 5vmin 0px">
-              </div>
-            </div>
-
-            <p class="heading">accessibility</p>
-            <div class="row align-items-center">
-              <div class="col-sm-12 col-xl-7 order-xl-12">
-                <br>
-                <p class="detail-right">not the focus of most <br>ridesharing apps.</p>
-                <p class="detail-right" style="color:#0B4439">it should be.</p>
-                <br>
-                <p class="detail-right">logical groupings</p>
-                <p class="detail-right">customizable</p>
-                <p class="detail-right">driver training</p>
-              </div>
-              <div class="col-sm-12 col-xl-5 order-xl-1">
-                <img class="image-left" src="assets/img/shyft-5.png">
-              </div>
-            </div>
-
-            <p class="heading">favorites</p>
-            <div class="row align-items-center">
-              <div class="col-sm-12 col-xl-4">
-                <br>
-                <p class="detail-left">easy access</p>
-                <br>
-                <p class="detail-left">quick editing</p>
-              </div>
-              <div class="col-sm-12 col-xl-4">
-                <img src="assets/img/shyft-6-1.png" alt="Image" style="width: auto; max-height: 80vh; margin: 5vmin 0px">
-              </div>
-              <div class="col-sm-12 col-xl-4">
-                <img src="assets/img/shyft-6-2.png" alt="Image" style="width: auto; max-height: 80vh; margin: 5vmin 0px">
-              </div>
-            </div>
-
-            <p class="heading">scheduling a ride</p>
-            <div class="row align-items-center">
-              <div class="col-sm-12 col-xl-7 order-xl-12">
-                <br>
-                <p class="detail-right" style="color:#0B4439">less hidden buttons</p>
-                <p class="detail-right">simpler to schedule than competitors</p>
-              </div>
-              <div class="col-sm-12 col-xl-5 order-xl-1">
-                <img class="image-left" src="assets/img/shyft-7-1.png">
-              </div>
-            </div>
-            <div class="row align-items-center">
-              <div class="col-sm-12 col-xl-4">
-                <img src="assets/img/shyft-7-2.png" alt="Image" style="width: auto; max-height: 80vh; margin: 5vmin 0px">
-              </div>
-              <div class="col-sm-12 col-xl-4">
-                <img src="assets/img/shyft-7-3.png" alt="Image" style="width: auto; max-height: 80vh; margin: 5vmin 0px">
-              </div>
-              <div class="col-sm-12 col-xl-4">
-                <img src="assets/img/shyft-7-4.png" alt="Image" style="width: auto; max-height: 80vh; margin: 5vmin 0px">
-              </div>
-            </div>
-
-            <p class="heading">safety</p>
-            <div class="row align-items-center">
-              <div class="col-sm-12 col-xl-4">
-                <br>
-                <p class="detail-left" style="color:#0B4439">AI powered</p>
-                <br>
-                <p class="detail-left">never get in the wrong car</p>
-              </div>
-              <div class="col-sm-12 col-xl-8">
-                <img src="assets/img/shyft-8-1.png" alt="Image" style="width: auto; max-height: 80vh; margin: 5vmin 0px">
-              </div>
-            </div>
-
-            <img src="assets/img/shyft-9.png" alt="Image" style="margin: 30vh 0vh; width:auto; max-height:40vh;">
-
           </div>
         </div>
       </div>
     </section>
 
-
-
-    <footer class="pb-5 bg-primary-3 text-light">
+    <section class="p-0" data-reading-position>
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-xs-11 col-lg-7">
-            <div class="h1">Interested in collaborating?</div>
-              <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#subscribe-modal">
-                Let's create together
-              </button>
-              <div class="modal fade" id="subscribe-modal" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <img class="icon bg-dark" src="assets/img/icons/interface/cross.svg" alt="cross interface icon" data-inject-svg />
-                      </button>
-                      <div class="m-xl-4 m-3">
-                        <div class="text-center mb-4">
-                          <h4 class="h1 mb-1" style="color:#091733">Get in touch.</h4>
-                          <p style="color:#091733">Just use any method below. Thanks!</p>
+          <div class="col-xl-8 col-lg-8 col-md-10">
+            <article class="article">
+
+              <div class="row justify-content-center mt-7 mb-7">
+                <div class="col-auto">
+                  <img src="assets/img/shyft-logo.png" class="icon icon-lg">
+                </div>
+
+                  <div class="col-auto my-auto">
+                    <h1 class="mt-3 mb-1">Shyft</h1>
+                    <h4 style="font-weight:lighter">
+                      Accessible ridesharing for seniors
+                    </h4>
+                  </div>
+              </div>
+
+              <div class="row pt-1 pl-2 pr-3">
+                    <div class="col-lg-4 col-xs-12">
+                        <h4>My Role</h4>
+                        <p class="main">
+                            UX Designer <br>
+                            UX Researcher
+                        </p>
                       </div>
-                          <p style="color:black">Phone: <a href="tel:+1-919-930-4727" style="color:black">919.930.4727</a></p>
-                          <p style="color:black">Email: <a href="mailto:ryanjbolick@gmail.com" target="blank" style="color:black">ryanjbolick@gmail.com</a></p>
-                          <p style="color:#091733">Twitter: <a href="https://twitter.com/uiuxguy" target="blank" style="color:black">@uiuxguy</a></p>
-                          <p style="color:#091733">LinkedIn: <a href="https://www.linkedin.com/in/rjbolick/" target="blank" style="color:black">rjbolick</a></p>
+                      <div class="col-lg-4 col-xs-12">
+                          <h4>Tools</h4>
+                          <p class="main">
+                              Adobe XD <br>
+                              Adobe Illustrator
+                          </p>
                       </div>
+                      <div class="col-lg-4 col-xs-12">
+                          <h4>Design Research</h4>
+                          <p class="main">
+                              Interviews <br>
+                              Focus groups <br>
+                              Usability testing
+                          </p>
+                      </div>
+
+                </div>
+
+
+                <div class="row pt-1 pl-2 pr-3">
+                    <div class="col-auto">
+                        <h4>The Brief</h4>
+                        <p class="main">
+                            Transportation is one of the senior community's biggest issues. Many cannot drive, but still desire and need to reach their communities. Seniors know about ridesharing solutions, but struggle navigating current user interfaces. The task: design a ridesharing app with accessibility at the forefront.
+                        </p>
+                      </div>
+                  </div>
+
+
+                <div class="row mt-7 pt-2 pl-2 pr-3">
+                  <video class="centerVideo" autoplay loop muted playsinline>
+                    <source src="assets/video/shyft-1.mp4">
+                  </video>
+                </div>
+
+                <div class="row mt-2 pt-1 pl-2 pr-3">
+                    <div class="col-auto">
+                        <h4>Summary</h4>
+                        <p class="main">
+                            Shyft was designed for seniors, focusing on ease of use and accessibility by following WCAG standards. A straightforward, card-based homescreen clearly guides the user to specific tasks. Large text and use of contrast encourages quick, informed decisions with high accuracy. Accessibility settings are intuitive to find and change, ensuring trust that the driver will be able to cater to the user.
+                        </p>
+                      </div>
+                  </div>
+
+                <div class="row mt-7 pt-2 pl-2 pr-3">
+                  <div class="col-lg-6 order-md-1 mb-3">
+                    <img src="assets/img/shyft-1.png" alt="Image" class="centerImage">
+                  </div>
+                  <div class="col-lg-6 order-md-12 my-auto">
+                      <h4>The Homescreen</h4>
+                      <p class="main">
+                        Clean, large cards help minimize user error. Core functions are all displayed to minimize taps and frustration.
+                      </p>
                     </div>
+                </div>
+
+
+                <div class="row mt-7 pt-2 pl-2 pr-3">
+                  <div class="col-lg-6">
+                    <img src="assets/img/shyft-4-1.png" alt="Image" class="centerImage">
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="assets/img/shyft-4-2.png" alt="Image" class="centerImage">
                   </div>
                 </div>
-              </div>
+                <div class="row mt-3 pt-1 pl-2 pr-3">
+                    <div class="col-auto">
+                        <h4>Talk or Text</h4>
+                        <p class="main">
+                            Shyft provides users the flexibilty to type out destinations or go hands-free using natural language.
+                        </p>
+                      </div>
+                  </div>
 
-          </div>
-        </div>
 
-            <div class="row justify-content-center mt-5">
-              <div class="col-5 col-lg-3 col-xl-2">
-                <h5>Navigate</h5>
-                <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="comingsoon.html" class="nav-link">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="comingsoon.html" class="nav-link">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="blog.html" class="nav-link">Blog</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-6 col-lg-4 col-xl-4">
-                <h5>Contact</h5>
-                <ul class="nav flex-column">
-                  <li class="nav-link">
-                    Phone: <a href="tel:+1-919-930-4727">919.930.4727</a>
-                  </li>
-                  <li class="nav-link">
-                    Email: <a href="mailto:ryanjbolick@gmail.com" target="blank">ryanjbolick@gmail.com</a>
-                  </li>
-                  <li class="nav-link">
-                    Twitter: <a href="https://twitter.com/uiuxguy"target="blank">@uiuxguy</a>
-                  </li>
-                  <li class="nav-link">
-                    LinkedIn: <a href="https://www.linkedin.com/in/rjbolick/" target="blank">rjbolick</a>
-                  </li>
-                </ul>
-              </div>
-          </div>
+                  <div class="row mt-7 pt-2 pl-2 pr-3">
+                    <div class="col-lg-6 order-md-12 mb-3">
+                      <img src="assets/img/shyft-5.png" alt="Image" class="centerImage">
+                    </div>
+                    <div class="col-lg-6 order-md-1 my-auto">
+                        <h4>Accessibility</h4>
+                        <p class="main">
+                          Accessibility accomodations are presented at the top of settings to give users the best chance of having their needs met.
+                        </p>
+                      </div>
+                  </div>
 
-        <div class="row text-center">
-          <div class="col-12 mt-5">
-            <p class="text-muted" style="font-weight:lighter">Designed and coded by Ryan Bolick. ©2019</p>
+
+                  <div class="row mt-7 pt-2 pl-2 pr-3">
+                    <div class="col-lg-6">
+                      <img src="assets/img/shyft-6-1.png" alt="Image" class="centerImage">
+                    </div>
+                    <div class="col-lg-6">
+                      <img src="assets/img/shyft-6-2.png" alt="Image" class="centerImage">
+                    </div>
+                  </div>
+                  <div class="row mt-3 pt-1 pl-2 pr-3">
+                      <div class="col-auto">
+                          <h4>Favorites</h4>
+                          <p class="main">
+                              Research found that most users visit a consistent set of places. For this reason, favorites are prominantly displayed on the homescreen for quick access and editing.
+                          </p>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-7 pt-2 pl-2 pr-3">
+                      <div class="col-lg-6">
+                        <img src="assets/img/shyft-7-1.png" alt="Image" class="centerImage">
+                      </div>
+                      <div class="col-lg-6">
+                        <img src="assets/img/shyft-7-2.png" alt="Image" class="centerImage">
+                      </div>
+                    </div>
+                    <div class="row mt-3 pt-1 pl-2 pr-3">
+                        <div class="col-auto">
+                            <h4>Scheduling a ride</h4>
+                            <p class="main">
+                                Seniors stated that they prefer to schedule their travel, and have a hard time doing this on current solutions. Scheduling is the default in Shyft.
+                            </p>
+                          </div>
+                      </div>
+
+                      <div class="row mt-7 pt-2 pl-2 pr-3">
+                        <div class="col-lg-6">
+                          <img src="assets/img/shyft-7-3.png" alt="Image" class="centerImage">
+                        </div>
+                        <div class="col-lg-6">
+                          <img src="assets/img/shyft-7-4.png" alt="Image" class="centerImage">
+                        </div>
+                      </div>
+                      <div class="row mt-3 pt-1 pl-2 pr-3">
+                          <div class="col-auto">
+                              <h4>Safety</h4>
+                              <p class="main">
+                                  A core value of Shyft is safety. Driver picture and vehicle are prominantly displayed with up-to-date information on their location and arrival time.
+                              </p>
+                            </div>
+                        </div>
+
+                        <div class="row mt-7">
+                            <img src="assets/img/shyft-logo-alt.png" alt="Image" class="lastImage">
+                        </div>
+
+                        <div class="row text-center mt-6 pl-3 pr-3">
+                        <p class="lead mt-3" style="font-style:italic">
+                          A case study documenting my process will be published soon <a href="blog" target="_blank">on my blog.</a></span>
+                        </p>
+                      </div>
+
+            </article>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
+
+    <section class="has-divider">
+      <div class="container pt-3">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-10">
+            <hr>
+            <div class="d-flex align-items-center">
+              <span class="text-small mr-1">Share this:</span>
+              <div class="d-flex mx-2">
+                <a href="https://twitter.com/intent/tweet?text=https://www.ryanbolick.com/shyft%20@uiuxguy%20" target="_blank" class="nav-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" class="injected-svg icon undefined" data-src="assets/img/icons/social/twitter.svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" style="fill:#1DA1F2"></path></svg>
+                </a>
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ryanbolick.com%2FfocusPack&amp;src=sdkpreparse" target="_blank" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" class="injected-svg icon undefined" data-src="assets/img/icons/social/facebook.svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Facebook icon</title><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"></path></svg>
+                  </a>
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="pb-5 mt-0" style="background-color:#f7f7f7">
+        <div class="container">
+          <div class="row mb-1 justify-content-center">
+            <div class="col-auto">
+              <a href="/">
+                <h1 class="hi">Ryan Bolick</h1>
+              </a>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col">
+              <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item"><a href="projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item"><a href="about" class="nav-link">About</a>
+                <!-- </li>
+                <li class="nav-item"><a href="blog" class="nav-link">Blog</a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-2">
+            <div class="col-auto">
+              <ul class="nav">
+                <li class="nav-item" data-toggle="tooltip" data-placement="top" data-original-title="919.930.4727">
+                  <a href="tel:+1-919-930-4727" class="nav-link">
+                    <svg role="img" viewBox="0 0 24 24" class="injected-svg icon">
+                      <path d="M11.914857,14.1427403 L14.1188827,11.9387145 C14.7276032,11.329994 14.8785122,10.4000511 14.4935235,9.63007378 L14.3686433,9.38031323 C13.9836546,8.61033591 14.1345636,7.680393 14.7432841,7.07167248 L17.4760882,4.33886839 C17.6713503,4.14360624 17.9879328,4.14360624 18.183195,4.33886839 C18.2211956,4.37686904 18.2528214,4.42074752 18.2768552,4.46881498 L19.3808309,6.67676638 C20.2253855,8.3658756 19.8943345,10.4059034 18.5589765,11.7412615 L12.560151,17.740087 C11.1066115,19.1936265 8.95659008,19.7011777 7.00646221,19.0511351 L4.5919826,18.2463085 C4.33001094,18.1589846 4.18843095,17.8758246 4.27575484,17.613853 C4.30030124,17.5402138 4.34165566,17.4733009 4.39654309,17.4184135 L7.04781491,14.7671417 C7.65653544,14.1584211 8.58647835,14.0075122 9.35645567,14.3925008 L9.60621621,14.5173811 C10.3761935,14.9023698 11.3061364,14.7514608 11.914857,14.1427403 Z" fill="#5a5a5a"></path></svg>
+                  </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="top" data-original-title="ryanjbolick@gmail.com">
+                  <a href="mailto:ryanjbolick@gmail.com" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" class="injected-svg icon undefined" data-src="assets/img/icons/social/youtube.svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <path d="M5,6 L19,6 C20.1045695,6 21,6.8954305 21,8 L21,17 C21,18.1045695 20.1045695,19 19,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,8 C3,6.8954305 3.8954305,6 5,6 Z M18.1444251,7.83964668 L12,11.1481833 L5.85557487,7.83964668 C5.4908718,7.6432681 5.03602525,7.77972206 4.83964668,8.14442513 C4.6432681,8.5091282 4.77972206,8.96397475 5.14442513,9.16035332 L11.6444251,12.6603533 C11.8664074,12.7798822 12.1335926,12.7798822 12.3555749,12.6603533 L18.8555749,9.16035332 C19.2202779,8.96397475 19.3567319,8.5091282 19.1603533,8.14442513 C18.9639747,7.77972206 18.5091282,7.6432681 18.1444251,7.83964668 Z" fill="#5a5a5a"></path></svg>
+                  </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="top" data-original-title="@uiuxguy">
+                  <a href="https://twitter.com/uiuxguy" target="_blank" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" class="injected-svg icon undefined" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path></svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.linkedin.com/in/rjbolick/" target="_blank" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" class="injected-svg icon undefined" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.instagram.com/rjbolick/" target="_blank" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" class="injected-svg icon undefined" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"></path></svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.facebook.com/ryan.bolick.7" target="_blank" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" class="injected-svg icon undefined"  xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"></path></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row justify-content-center text-center">
+            <div class="col-xl-10">
+              <p class="low">Designed and coded by Ryan Bolick. ©2020</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
 
 
 
