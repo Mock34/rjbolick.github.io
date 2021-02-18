@@ -2022,26 +2022,26 @@ fieldset:disabled a.btn {
     .show > .btn-primary-3.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(40, 39, 67, 0.5); }
 
-.btn-outline-primary {
-  color: #2A2A72;
-  border-color: #2A2A72; }
-  .btn-outline-primary:hover {
-    color: #fff;
-    background-color: #2A2A72;
-    border-color: #2A2A72; }
-  .btn-outline-primary:focus, .btn-outline-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(42, 42, 114, 0.5); }
-  .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-    color: #2A2A72;
-    background-color: transparent; }
-  .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
-  .show > .btn-outline-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #2A2A72;
-    border-color: #2A2A72; }
-    .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-outline-primary.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(42, 42, 114, 0.5); }
+      .btn-outline-primary {
+        color: #0066b3;
+        border-color: #0066b3; }
+        .btn-outline-primary:hover {
+          color: #fff;
+          background-color: #0066b3;
+          border-color: #0066b3; }
+        .btn-outline-primary:focus, .btn-outline-primary.focus {
+          box-shadow: 0 0 0 0.2rem rgba(55, 85, 190, 0.5); }
+        .btn-outline-primary.disabled, .btn-outline-primary:disabled {
+          color: #0066b3;
+          background-color: transparent; }
+        .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
+        .show > .btn-outline-primary.dropdown-toggle {
+          color: #fff;
+          background-color: #3755BE;
+          border-color: #3755BE; }
+          .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+          .show > .btn-outline-primary.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.2rem rgba(55, 85, 190, 0.5); }
 
 .btn-outline-secondary {
   color: #6c757d;
@@ -8550,7 +8550,7 @@ strong {
 
 .highlight {
   display: inline;
-  background: rgba(244, 68, 46, 0.2); }
+  background: rgba(100,169,188, 0.4); }
 
 .alert {
   word-break: break-word; }
