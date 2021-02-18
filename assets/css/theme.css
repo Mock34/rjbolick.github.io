@@ -2000,26 +2000,6 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(61, 65, 88, 0.5); }
 
 
-      .btn-outline-primary-4 {
-        color: #0066b3;
-        border-color: #0066b3; }
-        .btn-outline-primary-4:hover {
-          color: #fff;
-          background-color: #0066b3;
-          border-color: #0066b3; }
-        .btn-outline-primary-4:focus, .btn-outline-primary.focus {
-          box-shadow: 0 0 0 0.2rem rgba(55, 85, 190, 0.5); }
-        .btn-outline-primary-4.disabled, .btn-outline-primary:disabled {
-          color: #0066b3;
-          background-color: transparent; }
-        .btn-outline-primary-4:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
-        .show > .btn-outline-primary-4.dropdown-toggle {
-          color: #fff;
-          background-color: #3755BE;
-          border-color: #3755BE; }
-          .btn-outline-primary-4:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
-          .show > .btn-outline-primary.dropdown-toggle:focus {
-            box-shadow: 0 0 0 0.2rem rgba(55, 85, 190, 0.5); }
 
 .btn-outline-primary {
   color: #0066b3;

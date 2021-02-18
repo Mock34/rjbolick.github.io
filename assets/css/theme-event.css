@@ -8548,9 +8548,11 @@ strong {
 .text-light .text-muted {
   color: rgba(255, 255, 255, 0.7) !important; }
 
+
 .highlight {
   display: inline;
   background: rgba(100,169,188, 0.4); }
+
 
 .alert {
   word-break: break-word; }
