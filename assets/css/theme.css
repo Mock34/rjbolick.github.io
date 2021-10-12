@@ -11552,6 +11552,8 @@ https://flickity.metafizzy.co
     height: 2.25rem; }
   .icon.icon-lg {
     height: 3rem; }
+    .icon.icon-xl {
+      height: 8rem; }
   .icon.icon-sm {
     height: 0.75rem; }
 
@@ -13993,6 +13995,8 @@ article table {
       width: 2.25rem; }
     svg.icon.icon-lg {
       width: 3rem; }
+      svg.icon.icon-xl {
+        width: 8rem; }
     svg.icon.icon-sm {
       width: 0.75rem; }
   img {
